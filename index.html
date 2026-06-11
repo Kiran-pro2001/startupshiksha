@@ -91,8 +91,33 @@ body{
   cursor:pointer;
   transition:all .25s;
   text-decoration:none;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 .pill:hover{background:var(--accent4);border-color:var(--accent4);color:#fff}
+
+.outline-link{
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  background:var(--surface2);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 24px;
+  transition:all .2s;
+  cursor:pointer;
+  text-align:center;
+}
+.outline-link > span:first-child{min-width:28px;text-align:center;flex-shrink:0}
+.outline-link > span:nth-child(2){flex:1;text-align:center}
+.outline-link > span:last-child{margin-left:0;flex-shrink:0;font-size:12px;color:var(--text-dim)}
+
+.table-shell{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px}
+.table-shell table{min-width:620px;width:100%;border-collapse:collapse;font-size:13px}
 
 /* ── NAV ── */
 .sticky-nav{
@@ -260,7 +285,6 @@ body{
   font-size:11px;font-weight:700;flex-shrink:0;
   margin-top:2px;
 }
-.step-content{}
 .step-title{font-weight:600;font-size:14px;margin-bottom:2px}
 .step-desc{font-size:13px;color:var(--text-muted)}
 
@@ -455,11 +479,51 @@ svg text{font-family:'DM Sans',sans-serif}
 .module:nth-child(3){animation-delay:.1s}
 
 /* ── RESPONSIVE ── */
-@media(max-width:600px){
-  .module-header{grid-template-columns:1fr}
-  .module-num{font-size:50px}
-  .matrix,.pivot-quad,.pmf-matrix{grid-template-columns:1fr}
+@media (max-width: 900px){
+  .sticky-nav{padding:12px 16px;gap:8px}
+  .sticky-nav span{display:block;width:100%;margin:0 0 6px}
+  .hero{padding:70px 20px}
+  .module{padding:64px 20px}
+  .footer{padding:48px 20px}
+  .framework{padding:24px}
+  .bar-row{flex-direction:column;align-items:flex-start;gap:6px}
+  .bar-label{min-width:0}
+  .bar-track{width:100%}
+}
+
+@media (max-width: 768px){
+  .hero{padding:60px 16px}
+  .module{padding:56px 16px}
+  .hero-desc{margin-bottom:32px}
+  .module-pills{flex-direction:column;align-items:stretch}
+  .pill{width:100%;text-align:center}
+  .module-header{gap:12px;align-items:center}
+  .module-num{font-size:56px}
+  .steps li{flex-direction:column;gap:10px}
+  .step-num{margin-top:0}
+  .grid-2,.grid-3,.grid-4,.matrix,.pivot-quad,.pmf-matrix,.quadrant-grid{grid-template-columns:1fr}
+  .matrix-cell,.pq{padding:14px}
+  .highlight-row{flex-direction:column}
+  .hl-box{min-width:0}
+  .formula{padding:16px 18px}
+}
+
+@media (max-width: 600px){
+  .hero h1{font-size:clamp(52px,14vw,76px)}
+  .hero-sub{font-size:18px}
+  .hero-badge{font-size:10px;padding:6px 14px;letter-spacing:2px}
+  .sticky-nav{flex-wrap:wrap}
+  .nav-dot{padding:4px 10px;font-size:11px}
+  .module-num{font-size:44px}
+  .module-title{font-size:28px}
+  .module-objective{padding:14px 16px}
+  .framework{padding:18px}
+  .card,.pricing-card,.pmf-cell,.pq,.framework,.module-objective{border-radius:10px}
   .quadrant-grid{height:auto;grid-template-columns:1fr}
+  .quote{padding:18px 0 18px 16px;font-size:20px}
+  .outline-link{justify-content:center;flex-wrap:wrap;padding:14px 16px}
+  .outline-link > span:nth-child(2){width:100%}
+  .tmt-table th,.tmt-table td{padding:10px 12px}
 }
 </style>
 </head>
@@ -489,42 +553,42 @@ svg text{font-family:'DM Sans',sans-serif}
     <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px;">Course Outline</div>
     <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,32px);margin-bottom:36px;color:var(--text);">All 8 Modules at a Glance</h2>
     <div style="display:flex;flex-direction:column;gap:8px;">
-      <a href="#m1" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;cursor:pointer;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m1" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">01</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Shortlisting Startup Ideas</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m2" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m2" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">02</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Picking the Right Market</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m3" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m3" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">03</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Finding a Co-Founder</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m4" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m4" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">04</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Equity, ESOPs &amp; Cap Table</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m5" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m5" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">05</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Basics of Fundraising</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m6" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m6" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">06</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Building the MVP</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m7" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m7" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">07</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Pricing Your Product</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
       </a>
-      <a href="#m8" style="text-decoration:none;display:flex;align-items:center;gap:20px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:16px 24px;transition:all .2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
+      <a href="#m8" class="outline-link" style="gap:20px;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(4px)'" onmouseout="this.style.borderColor='var(--border)';this.style.transform='translateX(0)'">
         <span style="font-family:'Bebas Neue';font-size:20px;color:var(--accent);min-width:28px;">08</span>
         <span style="font-size:15px;font-weight:500;color:var(--text);">Getting First Customers &amp; Scale</span>
         <span style="margin-left:auto;font-size:12px;color:var(--text-dim);">→</span>
@@ -737,8 +801,8 @@ svg text{font-family:'DM Sans',sans-serif}
   <div class="section-title">Framework 1 — Size × Growth × Competition Matrix</div>
   <div class="framework">
     <div class="framework-title">The 8 Market Quadrants <span class="tag">Evaluation Framework</span></div>
-    <div style="overflow-x:auto">
-    <table style="width:100%;border-collapse:collapse;font-size:13px">
+    <div class="table-shell">
+    <table>
       <thead>
         <tr style="background:var(--surface);border-bottom:1px solid var(--border)">
           <th style="padding:10px 14px;text-align:left;color:var(--text-muted);font-size:11px;letter-spacing:1.5px">MARKET SIZE</th>
@@ -1183,6 +1247,7 @@ svg text{font-family:'DM Sans',sans-serif}
   <div class="framework">
     <div class="framework-title">Time × Money × Trust <span class="tag">MVP Strategy Framework</span></div>
     <p style="font-size:13px;color:var(--text-muted);margin-bottom:20px">Trust here means how customers naturally approach the <em>category</em> — not your startup specifically. High trust: Education, Doctors. Low trust: Real Estate, Used Cars.</p>
+    <div class="table-shell">
     <table class="tmt-table">
       <thead>
         <tr>
@@ -1200,6 +1265,7 @@ svg text{font-family:'DM Sans',sans-serif}
         <tr><td><span class="yes">Yes</span></td><td><span class="no">No</span></td><td><span class="yes">Yes</span></td><td><strong>Community & belonging</strong></td><td>Wikipedia</td></tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <div class="section-title">The Ultimate MVP Test</div>
