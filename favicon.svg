@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#0a0a0f"/>
+  <rect width="32" height="32" rx="6" fill="none" stroke="#7c6aff" stroke-width="1"/>
+
+  <!-- S left (gold) -->
+  <path d="M8 10 Q5 10 5 13 Q5 16 8 16.5 Q11 17 11 21 Q11 24 8 24 L6 24"
+        fill="none" stroke="#f5a623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- S right (teal) -->
+  <path d="M15 24 Q18 24 18 21 Q18 18 15 17.5 Q12 17 12 13 Q12 10 15 10 L17 10"
+        fill="none" stroke="#4af0c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Rocket top right -->
+  <g transform="translate(24, 8) rotate(30)">
+    <ellipse cx="0" cy="0" rx="2.5" ry="4" fill="#f5a623"/>
+    <polygon points="-2.5,2.5 2.5,2.5 0,6" fill="#7c6aff"/>
+    <circle cx="0" cy="-0.5" r="1" fill="#0a0a0f"/>
+  </g>
+
+  <!-- Dot trail -->
+  <circle cx="25" cy="24" r="1.5" fill="#4af0c4"/>
+  <circle cx="28" cy="24" r="1" fill="#7c6aff"/>
+</svg>
