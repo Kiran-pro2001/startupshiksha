@@ -35,36 +35,23 @@
 <meta property="og:url" content="https://startupshiksha.tech/">
 <meta property="og:image" content="https://startupshiksha.tech/favicon.svg">
 <meta property="og:site_name" content="Startup Shiksha">
-<<<<<<< HEAD
-=======
 <meta property="og:locale" content="en_IN">
->>>>>>> master
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Startup Shiksha - A platform to learn about Startups & Entrepreneurship">
 <meta name="twitter:description" content="Learn startup ideas, market analysis, fundraising, MVP building, pricing, and customer growth with Startup Shiksha.">
 <meta name="twitter:image" content="https://startupshiksha.tech/favicon.svg">
-<<<<<<< HEAD
-<title>Startup Shiksha - A platform to learn about Startups & Entrepreneurship</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-=======
 <meta name="twitter:creator" content="@ErKiranKumar_">
 <title>Startup Shiksha - A platform to learn about Startups & Entrepreneurship</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
->>>>>>> master
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Startup Shiksha",
   "url": "https://startupshiksha.tech/",
-<<<<<<< HEAD
-  "description": "A platform to learn about startups, entrepreneurship, business models, fundraising, MVPs, pricing, and growth strategies.",
-  "sameAs": [
-    "https://startupshiksha.tech/"
-=======
   "logo": "https://startupshiksha.tech/favicon.svg",
   "description": "A platform to learn about startups, entrepreneurship, business models, fundraising, MVPs, pricing, and growth strategies.",
   "sameAs": [
@@ -72,7 +59,6 @@
     "https://www.instagram.com/kiran_kumar_20.0/",
     "https://x.com/ErKiranKumar_",
     "https://www.youtube.com/@KiranKumar-wu9fp"
->>>>>>> master
   ],
   "areaServed": "India",
   "inLanguage": "en"
@@ -192,7 +178,6 @@ body{
 .table-shell{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px}
 .table-shell table{min-width:620px;width:100%;border-collapse:collapse;font-size:13px}
 
-<<<<<<< HEAD
 /* ── NAV ── */
 .sticky-nav{
   position:sticky;top:0;z-index:100;
@@ -221,85 +206,6 @@ body{
   background:var(--surface2);border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   font-size:10px;font-weight:700;
-=======
-/* ── FLOATING MODULE NAV ── */
-.module-nav{position:fixed;bottom:28px;right:28px;z-index:200}
-.module-nav-toggle{
-  position:relative;
-  width:58px;height:58px;border-radius:50%;
-  background:rgba(17,17,24,.9);
-  backdrop-filter:blur(16px);
-  border:1px solid var(--border);
-  box-shadow:0 8px 30px rgba(0,0,0,.4);
-  cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-  transition:border-color .25s,transform .2s;
-}
-.module-nav-toggle:hover{border-color:var(--accent4);transform:translateY(-2px)}
-.progress-ring{position:absolute;inset:0;width:58px;height:58px;transform:rotate(-90deg)}
-.progress-ring-bg{fill:none;stroke:var(--border);stroke-width:2}
-.progress-ring-fill{
-  fill:none;stroke:url(#navGradient);stroke-width:2;stroke-linecap:round;
-  stroke-dasharray:119.4;stroke-dashoffset:119.4;
-  transition:stroke-dashoffset .1s linear;
-}
-.module-nav-icon{position:relative;width:18px;height:13px;display:flex;flex-direction:column;justify-content:space-between}
-.module-nav-icon span{
-  display:block;width:100%;height:2px;border-radius:2px;
-  background:var(--text);transition:transform .3s,opacity .3s;
-}
-.module-nav-toggle.is-open .module-nav-icon span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
-.module-nav-toggle.is-open .module-nav-icon span:nth-child(2){opacity:0}
-.module-nav-toggle.is-open .module-nav-icon span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
-.module-nav-panel{
-  position:absolute;bottom:72px;right:0;
-  width:min(280px,calc(100vw - 40px));
-  max-height:min(70vh,460px);overflow-y:auto;
-  background:rgba(17,17,24,.96);
-  backdrop-filter:blur(20px);
-  border:1px solid var(--border);
-  border-radius:18px;
-  box-shadow:0 20px 50px rgba(0,0,0,.5);
-  padding:8px;
-  opacity:0;transform:translateY(12px) scale(.96);
-  pointer-events:none;
-  transform-origin:bottom right;
-  transition:opacity .22s ease,transform .22s ease;
-}
-.module-nav-panel.is-open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
-.module-nav-header{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:10px 12px 8px;
-  font-size:11px;letter-spacing:2px;text-transform:uppercase;
-  color:var(--text-dim);font-weight:600;
-  border-bottom:1px solid var(--border);margin-bottom:6px;
-}
-.module-nav-link{
-  display:flex;align-items:center;gap:12px;
-  padding:10px 12px;border-radius:12px;
-  font-size:13px;color:var(--text-muted);text-decoration:none;
-  transition:background .2s,color .2s;
-}
-.module-nav-link:hover{background:var(--surface2);color:var(--text)}
-.module-nav-link.is-active{background:linear-gradient(135deg,rgba(124,106,255,.18),rgba(232,67,147,.1));color:var(--text)}
-.module-nav-link.is-active .module-nav-num{background:linear-gradient(135deg,var(--accent4),var(--accent2));color:#fff}
-.module-nav-num{
-  width:24px;height:24px;flex-shrink:0;
-  background:var(--surface2);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:10px;font-weight:700;color:var(--text-muted);
-}
-.module-nav-overlay{
-  position:fixed;inset:0;background:rgba(5,5,10,.5);
-  opacity:0;pointer-events:none;z-index:190;
-  transition:opacity .25s;backdrop-filter:blur(2px);
-}
-.module-nav-overlay.is-open{opacity:1;pointer-events:auto}
-@media (max-width:600px){
-  .module-nav{bottom:18px;right:18px}
-  .module-nav-toggle{width:52px;height:52px}
-  .progress-ring{width:52px;height:52px}
->>>>>>> master
 }
 
 /* ── MODULE CARD ── */
@@ -618,7 +524,6 @@ svg text{font-family:'DM Sans',sans-serif}
 .pq.d{background:rgba(232,67,147,.06)}
 
 /* ── FOOTER ── */
-<<<<<<< HEAD
 .footer{
   text-align:center;padding:60px 24px;
   color:var(--text-dim);font-size:13px;
@@ -626,102 +531,6 @@ svg text{font-family:'DM Sans',sans-serif}
   background:var(--surface);
 }
 .footer h3{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:2px;color:var(--text);margin-bottom:8px}
-=======
-.site-footer{
-  border-top:1px solid var(--border);
-  background:var(--surface);
-  position:relative;
-  overflow:hidden;
-}
-.site-footer::before{
-  content:'';
-  position:absolute;inset:0;
-  background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(124,106,255,.08) 0%,transparent 70%);
-  pointer-events:none;
-}
-.footer-inner{
-  max-width:1100px;margin:0 auto;
-  padding:72px 24px 32px;
-  position:relative;
-}
-.footer-top{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1fr;
-  gap:40px;
-  padding-bottom:48px;
-  border-bottom:1px solid var(--border);
-}
-.footer-brand .footer-logo{
-  font-family:'Bebas Neue',sans-serif;
-  font-size:30px;letter-spacing:2px;
-  color:var(--text);
-  display:flex;align-items:center;gap:10px;
-  margin-bottom:14px;
-}
-.footer-logo-mark{
-  width:34px;height:34px;border-radius:9px;
-  background:linear-gradient(135deg,var(--accent4),var(--accent2));
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Bebas Neue',sans-serif;font-size:16px;color:#fff;
-  flex-shrink:0;
-}
-.footer-tagline{
-  font-family:'DM Serif Display',serif;
-  font-style:italic;font-size:15px;
-  color:var(--text-muted);margin-bottom:14px;
-  max-width:300px;
-}
-.footer-desc{
-  font-size:13px;color:var(--text-dim);
-  max-width:320px;margin-bottom:22px;
-}
-.footer-social{display:flex;gap:10px}
-.footer-social a{
-  width:38px;height:38px;border-radius:10px;
-  background:var(--surface2);border:1px solid var(--border);
-  display:flex;align-items:center;justify-content:center;
-  color:var(--text-muted);
-  transition:all .2s;
-}
-.footer-social a:hover{
-  border-color:var(--accent4);color:#fff;
-  background:linear-gradient(135deg,var(--accent4),var(--accent2));
-  transform:translateY(-2px);
-}
-.footer-social svg{width:16px;height:16px}
-.footer-col h4{
-  font-size:11px;letter-spacing:2px;text-transform:uppercase;
-  color:var(--accent3);font-weight:600;margin-bottom:18px;
-}
-.footer-col ul{list-style:none}
-.footer-col li{margin-bottom:11px}
-.footer-col a{
-  font-size:13px;color:var(--text-muted);text-decoration:none;
-  transition:color .2s;
-}
-.footer-col a:hover{color:var(--accent)}
-.footer-bottom{
-  display:flex;align-items:center;justify-content:space-between;
-  flex-wrap:wrap;gap:12px;
-  padding-top:28px;
-  font-size:12px;color:var(--text-dim);
-}
-.footer-bottom-links{display:flex;gap:18px;flex-wrap:wrap}
-.footer-bottom-links a{color:var(--text-dim);text-decoration:none;transition:color .2s}
-.footer-bottom-links a:hover{color:var(--accent)}
-.footer-heart{color:var(--accent2)}
-
-@media (max-width:900px){
-  .footer-top{grid-template-columns:1fr 1fr;gap:32px 24px}
-  .footer-inner{padding:56px 20px 28px}
-}
-@media (max-width:600px){
-  .footer-top{grid-template-columns:1fr;gap:32px;text-align:left}
-  .footer-brand .footer-tagline,.footer-desc{max-width:none}
-  .footer-bottom{flex-direction:column;align-items:flex-start}
-  .footer-inner{padding:48px 16px 24px}
-}
->>>>>>> master
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
@@ -730,16 +539,11 @@ svg text{font-family:'DM Sans',sans-serif}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px){
-<<<<<<< HEAD
   .sticky-nav{padding:12px 16px;gap:8px}
   .sticky-nav span{display:block;width:100%;margin:0 0 6px}
   .hero{padding:70px 20px}
   .module{padding:64px 20px}
   .footer{padding:48px 20px}
-=======
-  .hero{padding:70px 20px}
-  .module{padding:64px 20px}
->>>>>>> master
   .framework{padding:24px}
   .bar-row{flex-direction:column;align-items:flex-start;gap:6px}
   .bar-label{min-width:0}
@@ -767,11 +571,8 @@ svg text{font-family:'DM Sans',sans-serif}
   .hero h1{font-size:clamp(52px,14vw,76px)}
   .hero-sub{font-size:18px}
   .hero-badge{font-size:10px;padding:6px 14px;letter-spacing:2px}
-<<<<<<< HEAD
   .sticky-nav{flex-wrap:wrap}
   .nav-dot{padding:4px 10px;font-size:11px}
-=======
->>>>>>> master
   .module-num{font-size:44px}
   .module-title{font-size:28px}
   .module-objective{padding:14px 16px}
@@ -789,11 +590,7 @@ svg text{font-family:'DM Sans',sans-serif}
 
 <!-- HERO -->
 <section class="hero">
-<<<<<<< HEAD
   <div class="hero-badge">Young Innovators Program · Kiran Kumar</div>
-=======
-  <!-- <div class="hero-badge">Young Innovators Program </div> -->
->>>>>>> master
   <h1>THE STARTUP<br>PLAYBOOK</h1>
   <p class="hero-sub">8 Modules · Every Framework · Every Key Insight</p>
   <p class="hero-desc">A deep-dive summary of the complete Young Innovators Program — from idea generation to product-market fit, covering every model, matrix, and mental model.</p>
@@ -859,7 +656,6 @@ svg text{font-family:'DM Sans',sans-serif}
   </div>
 </section>
 
-<<<<<<< HEAD
 <!-- STICKY NAV -->
 <nav class="sticky-nav">
   <span>Modules</span>
@@ -872,39 +668,6 @@ svg text{font-family:'DM Sans',sans-serif}
   <a class="nav-dot" href="#m7"><span class="nav-num">7</span> Pricing</a>
   <a class="nav-dot" href="#m8"><span class="nav-num">8</span> Customers & Scale</a>
 </nav>
-=======
-<!-- FLOATING MODULE NAV -->
-<div class="module-nav-overlay" id="moduleNavOverlay"></div>
-<div class="module-nav">
-  <div class="module-nav-panel" id="moduleNavPanel" role="navigation" aria-label="Module navigation">
-    <div class="module-nav-header">
-      <span>Jump to Module</span>
-      <span id="moduleNavProgressLabel">0%</span>
-    </div>
-    <a class="module-nav-link" data-id="m1" href="#m1"><span class="module-nav-num">01</span>Idea Generation</a>
-    <a class="module-nav-link" data-id="m2" href="#m2"><span class="module-nav-num">02</span>Market Analysis</a>
-    <a class="module-nav-link" data-id="m3" href="#m3"><span class="module-nav-num">03</span>Co-Founders</a>
-    <a class="module-nav-link" data-id="m4" href="#m4"><span class="module-nav-num">04</span>Equity & ESOPs</a>
-    <a class="module-nav-link" data-id="m5" href="#m5"><span class="module-nav-num">05</span>Fundraising</a>
-    <a class="module-nav-link" data-id="m6" href="#m6"><span class="module-nav-num">06</span>Building MVP</a>
-    <a class="module-nav-link" data-id="m7" href="#m7"><span class="module-nav-num">07</span>Pricing</a>
-    <a class="module-nav-link" data-id="m8" href="#m8"><span class="module-nav-num">08</span>Customers & Scale</a>
-  </div>
-  <button class="module-nav-toggle" id="moduleNavToggle" aria-expanded="false" aria-controls="moduleNavPanel" aria-label="Open module navigation">
-    <svg class="progress-ring" viewBox="0 0 44 44">
-      <defs>
-        <linearGradient id="navGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#7c6aff"/>
-          <stop offset="100%" stop-color="#e84393"/>
-        </linearGradient>
-      </defs>
-      <circle class="progress-ring-bg" cx="22" cy="22" r="19"></circle>
-      <circle class="progress-ring-fill" id="progressRingFill" cx="22" cy="22" r="19"></circle>
-    </svg>
-    <span class="module-nav-icon"><span></span><span></span><span></span></span>
-  </button>
-</div>
->>>>>>> master
 
 
 <!-- ═══════════════════════════ MODULE 1 ═══════════════════════════ -->
@@ -1974,129 +1737,6 @@ svg text{font-family:'DM Sans',sans-serif}
 </section>
 
 
-<<<<<<< HEAD
-=======
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="footer-logo"><span class="footer-logo-mark">SS</span> STARTUP SHIKSHA</div>
-        <p class="footer-tagline">Learn startups. Skip the guesswork.</p>
-        <p class="footer-desc">A platform to learn entrepreneurship — startup ideas, market analysis, fundraising, MVPs, pricing, and growth strategies, distilled from the Young Innovators Program.</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/kiran-kumar-sde/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.07-.02-2.45-1.5-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.03 0 3.59 2 3.59 4.59v4.72z"/></svg></a>
-          <a href="https://www.instagram.com/kiran_kumar_20.0/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.81.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.81-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.81.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07zm0 5.27a4.57 4.57 0 100 9.14 4.57 4.57 0 000-9.14zm0 7.54a2.97 2.97 0 110-5.94 2.97 2.97 0 010 5.94zm5.81-7.71a1.07 1.07 0 11-2.14 0 1.07 1.07 0 012.14 0z"/></svg></a>
-          <a href="https://x.com/ErKiranKumar_" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.6h3.7l-8.1 9.2 9.5 12.6h-7.4l-5.8-7.6-6.6 7.6H.5l8.6-9.8L0 1.6h7.6l5.3 7 6-7zm-1.3 19.4h2L7.5 3.8h-2l12.1 17.2z"/></svg></a>
-          <a href="https://www.youtube.com/@KiranKumar-wu9fp" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 2.5 12 2.5 12 2.5h-.01s-4.89 0-8.2.34c-.46.05-1.46.06-2.36 1-.71.72-.93 2.36-.93 2.36S0 8.13 0 10.06v1.78c0 1.93.23 3.86.23 3.86s.22 1.64.93 2.36c.9.94 2.08.91 2.6 1.01 1.9.18 8.07.34 8.24.34h.01s4.9-.01 8.21-.35c.46-.05 1.46-.06 2.36-1 .71-.72.94-2.36.94-2.36s.23-1.93.23-3.86v-1.78c0-1.93-.23-3.86-.23-3.86zM9.55 14.6V7.8l6.5 3.4-6.5 3.4z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Modules</h4>
-        <ul>
-          <li><a href="#m1">01 · Idea Generation</a></li>
-          <li><a href="#m2">02 · Market Analysis</a></li>
-          <li><a href="#m3">03 · Co-Founders</a></li>
-          <li><a href="#m4">04 · Equity & ESOPs</a></li>
-          <li><a href="#m5">05 · Fundraising</a></li>
-          <li><a href="#m6">06 · Building MVP</a></li>
-          <li><a href="#m7">07 · Pricing</a></li>
-          <li><a href="#m8">08 · Customers & Scale</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Young Innovators Program</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="mailto:hello@startupshiksha.tech">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-          <li><a href="#">Disclaimer</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="footer-year">2026</span> Startup Shiksha. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <span>Made with <span class="footer-heart">♥</span> by <a href="https://www.linkedin.com/in/kiran-kumar-sde/" target="_blank" rel="noopener noreferrer">Kiran Kumar</a></span>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
-
-<script>
-(function(){
-  var toggle = document.getElementById('moduleNavToggle');
-  var panel = document.getElementById('moduleNavPanel');
-  var overlay = document.getElementById('moduleNavOverlay');
-  var ringFill = document.getElementById('progressRingFill');
-  var progressLabel = document.getElementById('moduleNavProgressLabel');
-  var links = Array.prototype.slice.call(document.querySelectorAll('.module-nav-link'));
-  var sections = links.map(function(l){ return document.getElementById(l.dataset.id); });
-  var circumference = 2 * Math.PI * 19;
-
-  function openPanel(){
-    panel.classList.add('is-open');
-    overlay.classList.add('is-open');
-    toggle.classList.add('is-open');
-    toggle.setAttribute('aria-expanded','true');
-  }
-  function closePanel(){
-    panel.classList.remove('is-open');
-    overlay.classList.remove('is-open');
-    toggle.classList.remove('is-open');
-    toggle.setAttribute('aria-expanded','false');
-  }
-  toggle.addEventListener('click', function(){
-    panel.classList.contains('is-open') ? closePanel() : openPanel();
-  });
-  overlay.addEventListener('click', closePanel);
-  links.forEach(function(l){ l.addEventListener('click', closePanel); });
-  document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape') closePanel();
-  });
-
-  var ticking = false;
-  function updateScrollState(){
-    var scrollTop = window.scrollY;
-    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    var pct = docHeight > 0 ? Math.min(1, Math.max(0, scrollTop / docHeight)) : 0;
-    ringFill.style.strokeDashoffset = circumference * (1 - pct);
-    progressLabel.textContent = Math.round(pct * 100) + '%';
-
-    var activeId = null;
-    sections.forEach(function(sec){
-      if (!sec) return;
-      var rect = sec.getBoundingClientRect();
-      if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.4) {
-        activeId = sec.id;
-      }
-    });
-    links.forEach(function(l){
-      l.classList.toggle('is-active', l.dataset.id === activeId);
-    });
-    ticking = false;
-  }
-  window.addEventListener('scroll', function(){
-    if (!ticking) {
-      requestAnimationFrame(updateScrollState);
-      ticking = true;
-    }
-  }, { passive: true });
-  updateScrollState();
-})();
-</script>
->>>>>>> master
 
 </body>
 </html>
